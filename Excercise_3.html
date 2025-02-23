@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 3% 12% 3% 2%; 
+         box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.1);
+        }
+        .btn-container{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            
+        }
+        .cart-btn{
+            background-color: rgb(255,216,20);
+            border: none;
+            padding: 4% 10% 4% 10%;
+            border-radius: 4rem;
+            cursor: pointer;
+        }
+        .buy-btn{
+            background-color: rgb(255,164,28);
+            border: none;
+            padding: 4% 10% 4% 10%;
+            border-radius: 4rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://www.amazon.in" style="color: rgb(0, 113, 133);">Back to Amazon</a>
+        <h3>Nike Black Running Shoes</h3>
+        <h4 style="color: rgb(0, 118,0); margin: 0% 0% 0% 0%;">$39 - in stock.</h4>
+        <p>Free delivery tommorow</p>
+        <div class="btn-container">
+        <button class="cart-btn">Add to cart </button>
+        <button class="buy-btn">Buy now</button>
+        </div>
+    </div>
+    
+</body>
+</html>
