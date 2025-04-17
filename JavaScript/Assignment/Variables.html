@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        let globalVar="Global Variable";
+        function print(){
+            console.log(globalVar);
+        }
+        print();
+        console.log(globalVar);
+
+        function localScope(){
+            let localVar="Local Variable";
+            console.log(localVar);
+        }
+        localScope();
+        // console.log(localVar); Error
+
+        function blockScope(){
+            if(true){
+                let blockVar="Block Variable";
+                console.log(blockVar);
+            }
+            // console.log(blockVar); Error
+        }
+        blockScope();
+
+        function show(){
+            let globalVar="Local Variable";
+            console.log(globalVar);
+        }
+        show();
+        console.log(globalVar);
+    </script>
+</body>
+</html>

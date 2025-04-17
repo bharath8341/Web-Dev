@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Manipulation</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <script>
+        let list=document.querySelector('.list');
+        list=list.children;
+        for(let i=0;i<list.length;i++){
+            console.log(list[i].textContent);
+        }
+        for(let i=0;i<list.length;i++){
+            if(i%2===0){
+                list[i].classList.add('highlight');
+            }
+        }
+        console.log(`Number of items: ${list.length}`);
+    </script>
+</body>
+</html>
